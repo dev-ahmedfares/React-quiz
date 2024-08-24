@@ -14,7 +14,7 @@ function Timer() {
 
 
         return () => clearInterval(id)
-    },[])
+    },[dispatch])
 
     return (
         <p className="timer">

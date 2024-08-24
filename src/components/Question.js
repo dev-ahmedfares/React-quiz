@@ -2,7 +2,7 @@ import { useQuiz } from "../contexts/QuizContext";
 
 function Question() {
   const { questions,index, dispatch, answerIdx } = useQuiz()
-  const { options, correctOption, points, id } = questions[index];
+  const { options, correctOption, points } = questions[index];
   const hasAnswered =answerIdx !== null;
   
   return (
